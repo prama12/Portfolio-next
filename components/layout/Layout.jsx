@@ -1,12 +1,12 @@
-import Footer from "./Footer";
+import Toggle from "../toggle/Toggle";
 import Navbar from "./Navbar";
 
 const Layout = ({ children }) => {
   return (
     <>
+      <Toggle />
       <Navbar />
       {children}
-      <Footer />
     </>
   );
 };
