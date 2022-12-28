@@ -4,6 +4,7 @@ import navdata from "../data/navdata";
 const Navbar = () => {
   return (
     <>
+
       <nav className="  fixed right-0 z-50 flex h-screen items-center justify-center ">
         <div className=" flex flex-col gap-5 ">
           {navdata.map((data) => {
@@ -19,8 +20,9 @@ const Navbar = () => {
               </div>
             );
           })}
+
         </div>
-      </nav>
+      </nav> 
     </>
   );
 };

@@ -5,7 +5,8 @@ const about = () => {
   return (
   <>
     <AboutMe />
-  </>);
+  </>
+  );
 };  
 
 export default about;
