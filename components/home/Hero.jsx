@@ -4,6 +4,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <>
+
       <div className="dark:bg-dark-background bg-white relative h-screen overflow-hidden w-full">
         <div className="relative w-full  py-10 w-padding h-full flex gap-24 items-center">
           <div className="w-3/12 absolute left-0 items-center bg-primary-yellow h-full w-padding custom-clippath"></div>
@@ -16,6 +17,7 @@ const Hero = () => {
               alt="image"
               quality={100}
             />
+
           </div>
 
           {/* text  */}
