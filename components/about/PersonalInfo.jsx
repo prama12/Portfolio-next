@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '../commen/Button'
 import Header from '../commen/Header'
 import about from "../data/about"
-
+import DownloadIcon from "../"
 const PersonalInfo = () => {
   const data = Object.keys(about)
   return (
@@ -23,7 +23,7 @@ const PersonalInfo = () => {
               })
             }
             <div className=' col-span-2 '>
-              <Button text="Download CV"  />
+              <Button text="Download CV" icon= />
             </div>
           </div>
         </div>
