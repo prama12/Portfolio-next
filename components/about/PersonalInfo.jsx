@@ -9,8 +9,19 @@ import ProgressBar from '../commen/ProgressBar'
 import skills from '../data/skills'
 import { education, experience } from "../data/experienceeducation"
 import EducationCard from '../commen/EducationCard'
+import { useRef, useEffect, useState } from 'react'
 
 const PersonalInfo = () => {
+  const skillref = useRef()
+  const [myElementIsVisible, updateMyElementIsVisible] = useState();
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries, observer) => {
+      const entry = entries[0];
+      updateMyElementIsVisible(entry.isIntersecting);
+    });
+
+    observer.observe(skillref.current);
+  }, []);
   return (
     <div className=' max-w-6xl w-padding mx-auto'>
       <div className=' w-full '>
@@ -48,8 +59,11 @@ const PersonalInfo = () => {
         </div>
 
         {/* <div className=' flex justify-center  '> */}
-        <div className=' grid grid-cols-12 py-10 w-full '>
-          {
+
+        <div
+          ref={skillref}
+          className=' grid grid-cols-12 py-10 w-full '>
+          {myElementIsVisible &&
             skills.map((data, index) => {
               return (
                 <ProgressBar key={index} {...data} />

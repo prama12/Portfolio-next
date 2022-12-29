@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from "../commen/Button"
+import Telegram from "../../public/static/icons/telegram-plane.svg";
 
 const ContactForm = () => {
   return (
@@ -10,7 +11,7 @@ const ContactForm = () => {
       <div className=' col-span-2 border overflow-hidden p-3 rounded-3xl'><textarea className=' resize-y h-36 outline-none w-full' placeholder='YOUR MESSAGE' /></div>
 
       <div className=' w-fit'>
-        <Button text="send message" />
+        <Button text="send message" icon={<Telegram />} />
       </div>
     </div>
   )

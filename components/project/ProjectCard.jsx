@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 // import Image from 'next/image'
 
 const ProjectCard = ({ category, githublink, link, description, title, imagelink }) => {
+    const [imageMagnify, setImageMagnify] = useState(false)
     return (
-        <div className=' col-span-12 sm:col-span-6 lg:col-span-4 w-full border overflow-hidden rounded-md shadow-2xl'>
-            <div className=' w-full'>
+        <div onMouseEnter={() => setImageMagnify(true)} onMouseLeave={() => setImageMagnify(false)} className=' col-span-12 sm:col-span-6 lg:col-span-4 w-full border overflow-hidden rounded-md shadow-2xl cursor-pointer'>
+            <div className={` w-full ${imageMagnify && " scale-125"} duration-500`}>
                 <img src={imagelink} alt="project-image" />
             </div>
             <div className=' p-4'>
