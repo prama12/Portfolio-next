@@ -16,7 +16,7 @@ const Navbar = () => {
                   <div
                     className={
                       router.pathname == data.path
-                        ? " text-[#1ABDBD]"
+                        ? " text-2xl w-14 h-14 bg-primary-yellow dark:bg-primary-dark shadow rounded-full flex items-center justify-center"
                         : "text-2xl w-14 h-14 bg-primary-light dark:bg-primary-dark shadow rounded-full flex items-center justify-center "
                     }
                   >
