@@ -1,5 +1,6 @@
 import Sun from "../../public/static/icons/sun.svg";
 import Moon from "../../public/static/icons/moon.svg";
+import { useState } from "react";
 
 const Toggle = () => {
   const [dark, setDark] = useState(false);
