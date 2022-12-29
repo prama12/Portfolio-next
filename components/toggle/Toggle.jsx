@@ -3,7 +3,7 @@ import Moon from "../../public/static/icons/moon.svg";
 import { useState } from "react";
 
 const Toggle = () => {
-  const [dark, setDark] = useState(false);
+  // const [dark, setDark] = useState(false);
 
   return (
     <>
