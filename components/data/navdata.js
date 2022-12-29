@@ -20,7 +20,7 @@ const navdata = [
   {
     id: 3,
     name: "portfolio",
-    path: "/portfolio",
+    path: "/projects",
     icon: <Job />,
   },
   {
