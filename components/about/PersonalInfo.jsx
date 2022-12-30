@@ -32,7 +32,7 @@ const PersonalInfo = () => {
               Object.keys(about).map((key, index) => {
                 return (
                   <div className='  w-full overflow-auto flex flex-col md:flex-row ' key={index}>
-                    <span className=' font-normal text-gray-400 capitalize'>{key}:</span>  <span className=' mx-0 md:mx-2 text-primary-dark text-sm font-semibold 
+                    <span className=' font-normal text-gray-400 capitalize'>{key}:</span>  <span className=' mx-0 md:mx-2 text-primary-dark dark:text-primary-light text-sm font-semibold 
                     '>{about[key]}</span>
                   </div>
                 )

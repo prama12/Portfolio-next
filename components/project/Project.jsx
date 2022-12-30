@@ -6,9 +6,6 @@ import ProjectCard from './ProjectCard'
 import AnimateLayout from '../layout/AnimateLayout'
 
 const Project = () => {
-
-    const [animator, setAnimator] = useState(false)
-
     const [projectstate, setProjectstate] = useState(projectdata)
     const [filtercategory, setFiltercategory] = useState("all")
     const [categories, setCategories] = useState([])
@@ -36,30 +33,32 @@ const Project = () => {
 
     return (
         <AnimateLayout>
-            <div className=' max-w-6xl mx-auto mt-14 w-padding '>
-                <Title firstdata="my" seconddata="projects" backgroundtext="works" />
+            <div className=' dark:bg-black animation'>
+                <div className=' max-w-6xl mx-auto pt-14 w-padding '>
+                    <Title firstdata="my" seconddata="projects" backgroundtext="works" />
 
-                <div className=' flex justify-center gap-6 mt-12'>
-                    <button onClick={() => setFiltercategory("all")} className={` ${filtercategory === "all" ? "text-primary-yellow" : "text-primary-dark"} duration-500 capitalize font-semibold text-primary-dark font-Poppins`}>
-                        all
-                    </button>
-                    {
-                        categories.map((category, index) => {
+                    <div className=' flex justify-center gap-6 mt-12'>
+                        <button onClick={() => setFiltercategory("all")} className={` ${filtercategory === "all" ? "text-primary-yellow" : "text-primary-dark"} duration-500 capitalize font-semibold text-primary-dark font-Poppins`}>
+                            all
+                        </button>
+                        {
+                            categories.map((category, index) => {
+                                return (
+                                    <button onClick={() => setFiltercategory(category)} className={`capitalize font-semibold  text-primary-dark hover:text-primary-yellow animation ${filtercategory === category ? "text-primary-yellow" : "text-primary-dark"}`} key={index}>
+                                        {category}
+                                    </button>
+                                )
+                            })
+                        }
+                    </div>
+
+                    <div className=' grid  grid-cols-12 gap-x-10 gap-y-16 my-12 '>
+                        {projectstate.map((data, index) => {
                             return (
-                                <button onClick={() => setFiltercategory(category)} className={`capitalize font-semibold duration-500 text-primary-dark ${filtercategory === category ? "text-primary-yellow" : "text-primary-dark"}`} key={index}>
-                                    {category}
-                                </button>
+                                <ProjectCard key={index} {...data} />
                             )
-                        })
-                    }
-                </div>
-
-                <div className=' grid  grid-cols-12 gap-x-10 gap-y-16 my-12 '>
-                    {projectstate.map((data, index) => {
-                        return (
-                            <ProjectCard key={index} {...data} />
-                        )
-                    })}
+                        })}
+                    </div>
                 </div>
             </div>
         </AnimateLayout>

@@ -5,7 +5,7 @@ const Button = ({ text, icon }) => {
     const [hovereffect, setHovereffect] = useState(false)
     return (
         <button onMouseEnter={() => setHovereffect(true)} onMouseLeave={() => setHovereffect(false)} className=' cursor-pointer rounded-full border border-primary-yellow font-Poppins font-semibold flex  items-center overflow-hidden  relative'>
-            <div className={`${hovereffect ? " text-white" : " text-primary-dark"} animation px-8 py-3  z-10 text-center rounded-full`}>
+            <div className={`${hovereffect ? " text-white" : " text-primary-dark dark:text-primary-light"} animation px-8 py-3  z-10 text-center rounded-full`}>
                 {text.toUpperCase()}
             </div>
             <div className=" z-10 w-12 h-12 rounded-full bg-primary-yellow  flex justify-center items-center">
