@@ -3,8 +3,13 @@ import Image from "next/image";
 import AnimateLayout from "../layout/AnimateLayout";
 import Button from "../commen/Button";
 import Icon from "../../public/static/icons/arrow-right.svg"
+import { useRouter } from "next/router";
 
 const Hero = () => {
+  const router = useRouter()
+  const NavToAbout = () => {
+    router.push("/about")
+  }
   return (
     <>
       <AnimateLayout>
@@ -42,7 +47,7 @@ const Hero = () => {
                 </div>
 
                 <div>
-                  <Button text="more about me" icon={<Icon />} />
+                  <Button func={NavToAbout} text="more about me" icon={<Icon />} />
                 </div>
               </div>
             </div>

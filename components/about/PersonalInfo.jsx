@@ -39,7 +39,9 @@ const PersonalInfo = () => {
               })
             }
             <div className=' col-span-2 text-sm md:text-base my-6 '>
-              <Button text="Download CV" icon={<DownloadIcon />} />
+              <a href="/static/files/CV.pdf" download={"CV"}>
+                <Button text="Download CV" icon={<DownloadIcon />} />
+              </a>
             </div>
           </div>
 
