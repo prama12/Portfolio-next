@@ -8,16 +8,18 @@ import AnimateLayout from '../layout/AnimateLayout'
 const Blog = () => {
     return (
         <AnimateLayout>
-            <div className=' max-w-6xl mx-auto'>
-                <Title firstdata="my" seconddata="blog" backgroundtext="posts" />
-                <div className=' my-12 grid grid-cols-12 gap-10'>
-                    {
-                        blog.map((data, index) => {
-                            return (
-                                <BLlogCard key={index} {...data} />
-                            )
-                        })
-                    }
+            <div className=' dark:bg-black pb-12'>
+                <div className=' max-w-6xl mx-auto'>
+                    <Title firstdata="my" seconddata="blog" backgroundtext="posts" />
+                    <div className=' my-12 grid grid-cols-12 gap-10'>
+                        {
+                            blog.map((data, index) => {
+                                return (
+                                    <BLlogCard key={index} {...data} />
+                                )
+                            })
+                        }
+                    </div>
                 </div>
             </div>
         </AnimateLayout>

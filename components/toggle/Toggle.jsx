@@ -1,15 +1,19 @@
 import Sun from "../../public/static/icons/sun.svg";
 import Moon from "../../public/static/icons/moon.svg";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext"
+
 
 const Toggle = () => {
   // const [dark, setDark] = useState(false);
-
+  const { dark, setDark } = useContext(ThemeContext)
   return (
     <>
-      <div className="fixed top-5  z-50 right-4">
-        <div className="w-14 h-14 text-3xl text-primary-dark bg-primary-light rounded-full shadow flex items-center justify-center">
-          <Moon />
+      <div className=" fixed top-5 right-6 z-[999]">
+        <div onClick={() => setDark(!dark)} className={`w-[60px] h-8 cursor-pointer rounded-2xl p-0.5 ${dark ? " bg-gray-400" : " bg-primary-yellow"}`}>
+          <div className={`relative w-8 h-full text-white flex justify-center items-center duration-500 rounded-full  ${dark ? "-right-6 bg-primary-dark text-white" : "right-0 bg-white text-primary-dark"}`}>
+            {dark ? <Moon /> : <Sun />}
+          </div>
         </div>
       </div>
     </>
