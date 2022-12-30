@@ -1,12 +1,17 @@
-import Footer from "./Footer";
+import Toggle from "../toggle/Toggle";
 import Navbar from "./Navbar";
+import { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Layout = ({ children }) => {
+  const { dark } = useContext(ThemeContext);
   return (
     <>
-      <Navbar />
-      {children}
-      <Footer />
+      <div className={dark && "dark "}>
+        <Toggle />
+        <Navbar />
+        {children}
+      </div>
     </>
   );
 };
