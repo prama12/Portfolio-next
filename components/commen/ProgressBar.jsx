@@ -21,7 +21,7 @@ const ProgressBar = ({ name, percent }) => {
                     backgroundColor: '#3e98c7',
                 })}
                 strokeWidth={8} value={percentsetter} maxValue={100} text={`${percentsetter}%`} />
-            <div className=' font-medium text-primary-dark'>{name.toUpperCase()}</div>
+            <div className=' font-medium text-primary-dark dark:text-primary-light'>{name.toUpperCase()}</div>
         </div>
     )
 }
