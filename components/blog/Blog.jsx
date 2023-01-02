@@ -9,7 +9,7 @@ const Blog = () => {
     return (
         <AnimateLayout>
             <div className=' dark:bg-black pb-12'>
-                <div className=' max-w-6xl mx-auto'>
+                <div className=' max-w-6xl mx-auto w-padding'>
                     <Title firstdata="my" seconddata="blog" backgroundtext="posts" />
                     <div className=' my-12 grid grid-cols-12 gap-10'>
                         {
