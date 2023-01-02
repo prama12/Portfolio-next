@@ -6,7 +6,7 @@ import AnimateLayout from "../layout/AnimateLayout";
 const AboutMe = () => {
   return (
     <AnimateLayout>
-      <div className=" dark:bg-black pb-16">
+      <div className=" dark:bg-black pb-16 w-padding">
       <Title firstdata="about" seconddata="me" backgroundtext="resume" />
       <PersonalInfo />
       </div>
