@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <>
       <AnimateLayout>
-        <div className="  relative dark:bg-black animation  xl:h-screen xl:overflow-hidden w-full">
+        <div className="  relative dark:bg-black animation bg-red-800  lg:h-screen xl:overflow-hidden w-full">
           <div className="relative w-full pt-20 pb-32 xl:py-10 w-padding h-full flex xl:flex-row flex-col gap-10 xl:gap-24 items-center">
             <div className="w-80 hidden xl:flex absolute left-0 items-center bg-primary-yellow h-full w-padding custom-clippath"></div>
             <div className="relative z-10 xl:h-full xl:w-7/12 w-60 h-60 rounded-full xl:rounded-3xl shadow shadow-gray-700 overflow-hidden">

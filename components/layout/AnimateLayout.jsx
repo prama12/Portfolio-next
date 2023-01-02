@@ -35,11 +35,11 @@ const AnimateLayout = ({ children }) => {
         >
           <div
             style={{
-              position: "relative",
+              position: "fixed",
               top: mousePosition.y - 16,
               left: mousePosition.x - 16,
             }}
-            className="w-8 h-8  rounded-full bg-primary-yellow opacity-30 duration-300 ease-out"
+            className="w-8 h-8 rounded-full bg-primary-yellow hidden xl:block opacity-70 duration-300 ease-out"
           ></div>
 
           {children}
