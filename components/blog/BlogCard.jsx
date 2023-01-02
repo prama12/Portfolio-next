@@ -4,11 +4,11 @@ import Image from 'next/image'
 const BLlogCard = ({ imagepath, title, description }) => {
   const [imageMagnify, setImageMagnify] = useState(false)
   return (
-    <div onMouseEnter={() => setImageMagnify(true)} onMouseLeave={() => setImageMagnify(false)} className=' cursor-pointer col-span-12 md:col-span-6 lg:col-span-4 w-full rounded-md overflow-hidden shadow-2xl bg-gray-200 dark:bg-black  duration-300 dark:border border-gray-700'>
+    <div onMouseEnter={() => setImageMagnify(true)} onMouseLeave={() => setImageMagnify(false)} className=' cursor-pointer  w-full rounded-md overflow-hidden shadow-2xl bg-gray-200 dark:bg-black  duration-300 dark:border border-gray-700'>
       <div className=' w-full border-b-4 border-primary-yellow overflow-hidden'>
-        <div className={`${imageMagnify && " scale-125"} duration-500 border-2 border-red-400`}>
-          <img src={imagepath} alt="" />
-          {/* <Image src={imagepath} alt="blog_image" fill /> */}
+        <div className={`${imageMagnify && " scale-125"} duration-500 relative w-full h-80`}>
+          {/* <img src={imagepath} alt="" /> */}
+          <Image src={imagepath} alt="blog_image" layout='fill' objectFit='cover'/>
         </div>
       </div>
       <div className=' p-4'>
