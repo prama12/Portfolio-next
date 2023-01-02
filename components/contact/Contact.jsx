@@ -8,9 +8,9 @@ import AnimateLayout from '../layout/AnimateLayout'
 const Contact = () => {
     return (
         <AnimateLayout>
-            <div className=' h-fit dark:bg-black animation'>
+            <div className=' h-full pb-20 dark:bg-black animation'>
                 <div className=' max-w-6xl mx-auto w-padding '>
-                    <div className=' py-8 '>
+                    <div className=' py-8  '>
                         <Title firstdata="get in" seconddata="touch" backgroundtext="contact" />
                     </div>
                     <div className=' lg:grid grid-cols-12 gap-4'>
