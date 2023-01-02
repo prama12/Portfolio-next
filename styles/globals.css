@@ -26,5 +26,5 @@
 }
 
 .input {
-  @apply border overflow-hidden flex items-center p-3  animation bg-transparent outline-none w-full;
+  @apply border overflow-hidden flex items-center p-3 focus:border-primary-yellow   animation bg-transparent outline-none w-full;
 }
