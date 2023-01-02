@@ -1,13 +1,13 @@
 const about = {
-  "first name": "Dhiran",
-  "last name": "Sapkota",
+  "first name": "Prama",
+  "last name": "Pandit",
   age: "20 Years",
   nationality: "Nepali",
   freelance: <span className=" text-green-600 capitalize">available</span>,
-  Adress: "Bharatpur-15, Chitwan, Nepal",
-  phone: "+977 9863826676",
-  email: "dhiransapkota55@gmail.com",
-  skype: "not available",
+  Adress: "Nepal",
+  phone: "+977 9814165604",
+  email: "panditprama@gmail.com",
+  skype: "something here",
   languages: "Nepalese, English, Hindi",
 };
 export default about;
