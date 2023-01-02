@@ -22,6 +22,11 @@ const Project = () => {
             setProjectstate(projectdata)
         } else {
             const filtereddata = projectdata.filter((data) => {
+                // if (
+                //     data.category.includes(filtercategory)
+                // ) {
+                //     return data
+                // }
                 return (
                     data.category === filtercategory
                 )

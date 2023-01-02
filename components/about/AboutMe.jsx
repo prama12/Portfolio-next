@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <AnimateLayout>
       <div className=" dark:bg-black pb-16 w-padding">
-        <div className=" py-10">
+        <div className=" py-10  ">
           <Title firstdata="about" seconddata="me" backgroundtext="resume" />
         </div>
         <PersonalInfo />
