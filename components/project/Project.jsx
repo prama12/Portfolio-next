@@ -38,11 +38,11 @@ const Project = () => {
                     <Title firstdata="my" seconddata="projects" backgroundtext="works" />
 
                     {/* <div className='   bg-red-400 w-full px-2'> */}
-                    <div className='  flex overflow-x-scroll justify-center gap-6 mt-12 w-full '>
-                        <button onClick={() => setFiltercategory("all")} className={` ${filtercategory === "all" ? "text-primary-yellow" : "text-primary-dark"} duration-500 capitalize font-semibold text-primary-dark font-Poppins`}>
+                    <div className='  flex overflow-x-auto justify-center gap-6 mt-12 w-full '>
+                        <button onClick={() => setFiltercategory("all")} className={` z-30 ${filtercategory === "all" ? "text-primary-yellow" : "text-primary-dark"} duration-500 capitalize font-semibold text-primary-dark font-Poppins`}>
                             all
                         </button>
-                        <div className=' flex gap-6'>
+                        <div className=' flex gap-6 z-30'>
                             {
                                 categories.map((category, index) => {
                                     return (
@@ -56,7 +56,7 @@ const Project = () => {
                     </div>
                     {/* </div> */}
 
-                    <div className=' grid md:grid-cols-2  lg:grid-cols-3 gap-x-10 gap-y-16 my-12 '>
+                    <div className=' grid md:grid-cols-2  lg:grid-cols-3 gap-5 md:gap-10 my-12 '>
                         {projectstate.map((data, index) => {
                             return (
                                 <ProjectCard key={index} {...data} />
