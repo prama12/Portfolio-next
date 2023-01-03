@@ -50,22 +50,34 @@ const Contactdetails = () => {
 
       <div className="w-full mt-5 text-primary-dark  dark:text-white text-xl sm:text-2xl md:text-3xl gap-5 py-2 flex items-center">
         <div className="w-fit z-[999999] hover:text-blue-500 hover:scale-110 animation">
-          <a href="" target="_blank">
+          <a
+            href="https://www.facebook.com/prama.pandit.5/"
+            rel="noreferrer"
+            target="_blank"
+          >
             {contact.Facebook}
           </a>
         </div>
         <div className="w-fit z-[999999] hover:text-blue-900 hover:scale-110 animation">
-          <a href="" target="_blank">
+          <a href="https://github.com/prama12" rel="noreferrer" target="_blank">
             {contact.Github}
           </a>
         </div>
         <div className="w-fit z-[999999] hover:text-cyan-500 hover:scale-110 animation">
-          <a href="" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/prama-pandit-35656a200/"
+            rel="noreferrer"
+            target="_blank"
+          >
             {contact.Linkedin}
           </a>
         </div>
         <div className="w-fit z-[999999] hover:text-blue-400 hover:scale-110 animation">
-          <a href="" target="_blank">
+          <a
+            href="https://twitter.com/pramapandit_123"
+            rel="noreferrer"
+            target="_blank"
+          >
             {contact.Twitter}
           </a>
         </div>
