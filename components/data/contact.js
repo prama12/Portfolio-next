@@ -17,8 +17,8 @@ const contact = {
   Github: <Github />,
   Linkedin: <Linkedin />,
   Twitter: <Twitter />,
-  address: "Bharatpur-15, Dairy Chowk, Chitwan, Nepal",
-  mail: "dhiransapkota55@gmail.com",
-  phone: "+977 9863816676",
+  address: "Bharatpur-5, Prembasti, Chitwan, Nepal",
+  mail: "panditprama@gmail.com",
+  phone: "+977 9814165604",
 };
 export default contact;

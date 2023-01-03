@@ -1,10 +1,10 @@
 export const education = [
   {
     degree: "Bachelors Level",
-    date: "2076-Now",
-    uni: "Birendra Multiple Campus",
+    date: "2075-Now",
+    uni: "Saptaganaki Multiple Campus",
     description:
-      "Currently graduating on BSC. Computer Science and Information Technolgy",
+      "Currently graduating on Bachelors of Computer Application (BCA)",
   },
   {
     degree: "Higher School Level",

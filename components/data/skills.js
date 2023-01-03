@@ -1,14 +1,14 @@
 const skills = [
   {
-    name: "html",
+    name: "HTML|HTML5",
     percent: "80",
   },
   {
-    name: "css",
+    name: "CSS|CSS3",
     percent: "70",
   },
   {
-    name: "javascript",
+    name: "javaScript",
     percent: "80",
   },
   {
@@ -16,20 +16,12 @@ const skills = [
     percent: "95",
   },
   {
-    name: "react",
+    name: "React",
     percent: "83",
   },
   {
-    name: "next",
+    name: "Next js",
     percent: "60",
-  },
-  {
-    name: "node",
-    percent: "70",
-  },
-  {
-    name: "mongodb",
-    percent: "70",
   },
 ];
 
