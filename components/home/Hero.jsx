@@ -18,7 +18,7 @@ const Hero = () => {
             <div className="w-80 hidden xl:flex absolute left-0 items-center bg-primary-yellow h-full w-padding custom-clippath"></div>
             <div className="relative z-10 xl:h-full xl:w-7/12 w-60 h-60 rounded-full xl:rounded-3xl shadow shadow-gray-700 overflow-hidden">
               <Image
-                src="/static/images/profile.jpeg"
+                src="/static/images/profile.jpg"
                 layout="fill"
                 objectFit="cover"
                 alt="image"
