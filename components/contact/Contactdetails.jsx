@@ -58,12 +58,12 @@ const Contactdetails = () => {
             {contact.Facebook}
           </a>
         </div>
-        <div className="w-fit z-[999999] hover:text-gray-800 hover:scale-110 animation">
+        <div className="w-fit z-[999999] hover:text-gray-900 dark:hover:text-gray-700 hover:scale-110 animation">
           <a href="https://github.com/prama12" rel="noreferrer" target="_blank">
             {contact.Github}
           </a>
         </div>
-        <div className="w-fit z-[999999] hover:text-cyan-500 hover:scale-110 animation">
+        <div className="w-fit z-[999999] hover:text-[#0a66c2] hover:scale-110 animation">
           <a
             href="https://www.linkedin.com/in/prama-pandit-35656a200/"
             rel="noreferrer"
