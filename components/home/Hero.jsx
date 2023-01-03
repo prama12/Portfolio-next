@@ -31,15 +31,16 @@ const Hero = () => {
               <div className="flex w-full lg:w-[600px]  justify-center items-center xl:items-start xl:justify-start flex-col gap-5">
                 <div className="font-bold flex flex-col content-center  uppercase font-Poppins tracking-wide text-xl sm:text-3xl md:leading-[52px] md:text-[42px] ">
                   <span className="text-primary-yellow flex items-center">
-                    <span className="hidden xl:flex">-</span> I am dhiran sapkota.
+                    <span className="hidden xl:flex">-</span> I am Prama Pandit.
                   </span>
 
-                  <span className="text-primary-dark dark:text-primary-light">web developer</span>
-
+                  <span className="text-primary-dark dark:text-primary-light">
+                    web developer
+                  </span>
                 </div>
                 <div className="text-primary-dark md:leading-9 text-center xl:text-left text-xs sm:text-sm md:text-base font-Open Sans dark:text-primary-light ">
-                  I am a mern stack developer from Nepal
-                  focused on crafting clean & user‑friendly experiences and robust systems, I am
+                  I am a Frontend|Web developer from Nepal focused on crafting
+                  clean & user‑friendly experiences and robust systems, I am
                   passionate about building excellent software that improves the
                   lives of those around me.
                 </div>
