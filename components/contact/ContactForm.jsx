@@ -31,7 +31,7 @@ const ContactForm = () => {
       </div>
       <div className="z-[999] col-span-2 ">
         <textarea
-          className=" input rounded-3xl  h-32"
+          className=" input rounded-3xl h-32"
           placeholder="YOUR MESSAGE"
         />
       </div>
