@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Heading from "../components/commen/Heading";
 import Hero from "../components/home/Hero";
 
