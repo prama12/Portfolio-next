@@ -16,11 +16,14 @@ const Toggle = () => {
           }`}
         >
           <div
-            className={`relative text-2xl text-white flex justify-center items-center duration-500 rounded-full  ${
-              dark ? "text-white" : " text-primary-dark"
+            className={`relative text-2xl text-white flex justify-center items-center duration-500 rounded-full  
             }`}
           >
-            {dark ? <Sun /> : <Moon />}
+            {dark ? (
+              <Sun className="text-white" />
+            ) : (
+              <Moon className="text-primary-dark" />
+            )}
           </div>
         </div>
       </div>

@@ -7,17 +7,17 @@ export const education = [
       "Currently graduating on Bachelors of Computer Application (BCA)",
   },
   {
-    degree: "Higher School Level",
-    date: "2073-2076",
-    uni: "Sunrise English School",
+    degree: "+2 level",
+    date: "2073-2075",
+    uni: "Saptaganaki Multiple Campus",
     description:
-      "Completed 11th and 12th from Computer Science Stream with 3.34 aggregate gpa",
+      "Completed 11th and 12th from Computer Management Stream with 2.53 aggregate gpa",
   },
   {
-    degree: "school level",
-    date: "2073",
-    uni: "Bishwa Prakash School",
-    description: "Completed school level on BS 2073 with 3.55 grades",
+    degree: "+2 level",
+    date: "2072",
+    uni: "Shree Satyawati Higher Secondary School",
+    description: "Completed school level on BS 2072 with 3 GPA grades",
   },
 ];
 
@@ -25,8 +25,9 @@ export const experience = [
   {
     degree: "web developer",
     uni: "Intelzy.co",
-    description: "I am currently doing internship on web developement.",
-    date: "2018-2022",
+    description:
+      "I am currently doing web developement on nextjs and react js.",
+    date: "2021-Current",
   },
   // {
   //   degree: "web developer",
