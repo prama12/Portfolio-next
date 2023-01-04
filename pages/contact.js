@@ -1,9 +1,11 @@
+import Heading from "../components/commen/Heading";
 import Contact from "../components/contact/Contact";
 const contact = () => {
   return (
-    <div>
+    <>
+      <Heading title="Contact page - Prama Portfolio" />
       <Contact />
-    </div>
+    </>
   );
 };
 

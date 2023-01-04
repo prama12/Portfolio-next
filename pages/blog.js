@@ -1,12 +1,14 @@
-import React from 'react'
-import Blog from '../components/blog/Blog'
+import React from "react";
+import Blog from "../components/blog/Blog";
+import Heading from "../components/commen/Heading";
 
 const blog = () => {
   return (
-    <div>
+    <>
+      <Heading title="Blog page - Prama Portfolio" />
       <Blog />
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default blog
+export default blog;

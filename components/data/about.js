@@ -1,7 +1,7 @@
 const about = {
   "first name": "Prama",
   "last name": "Pandit",
-  age: "20 Years",
+  age: "22 Years",
   nationality: "Nepali",
   freelance: <span className=" text-green-600 capitalize">available</span>,
   Adress: "Nepal",
@@ -9,6 +9,6 @@ const about = {
   email: "panditprama@gmail.com",
   linkedin: "something here",
 
-  languages: "Nepalese, English, Hindi",
+  languages: "Nepali, English, Hindi",
 };
 export default about;
