@@ -7,7 +7,7 @@ const ProjectCard = ({ link, title, imagelink }) => {
     <div
       onMouseEnter={() => setImageMagnify(true)}
       onMouseLeave={() => setImageMagnify(false)}
-      className="h-52 bg-red-500 w-full z-[999] relative overflow-hidden rounded-xl shadow "
+      className="h-52 w-full z-[999] relative overflow-hidden rounded-xl shadow "
     >
       <a href={link} className="relative" target="_blank" rel="noreferrer">
         <div
