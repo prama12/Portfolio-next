@@ -35,19 +35,19 @@ const Project = () => {
 
   return (
     <AnimateLayout>
-      <div className=" dark:bg-black animation">
-        <div className=" max-w-6xl mx-auto pt-14 w-padding ">
+      <div className=" dark:bg-dark-background animation pb-20">
+        <div className=" max-w-6xl mx-auto sm:pt-20 pt-14 w-padding ">
           <Title firstdata="my" seconddata="projects" backgroundtext="works" />
 
           {/* <div className='   bg-red-400 w-full px-2'> */}
-          <div className="  flex overflow-x-auto justify-center gap-6 mt-12 w-full ">
+          <div className=" font-Poppins tracking-wide font-semibold flex overflow-x-auto justify-center gap-6 mt-12 w-full ">
             <button
               onClick={() => setFiltercategory("all")}
               className={` z-30 ${
                 filtercategory === "all"
                   ? "text-primary-yellow"
-                  : "text-primary-dark"
-              } duration-500 capitalize font-semibold text-primary-dark font-Poppins`}
+                  : "text-primary-dark dark:text-white "
+              } duration-500 uppercase hover:text-primary-yellow  `}
             >
               all
             </button>
@@ -56,10 +56,10 @@ const Project = () => {
                 return (
                   <button
                     onClick={() => setFiltercategory(category)}
-                    className={`capitalize font-semibold  text-primary-dark hover:text-primary-yellow animation ${
+                    className={` uppercase hover:text-primary-yellow animation ${
                       filtercategory === category
                         ? "text-primary-yellow"
-                        : "text-primary-dark"
+                        : "text-primary-dark dark:text-white"
                     } shrink-0 `}
                     key={index}
                   >
@@ -71,7 +71,7 @@ const Project = () => {
           </div>
           {/* </div> */}
 
-          <div className=" grid md:grid-cols-2  lg:grid-cols-3 gap-5 md:gap-10 my-12 ">
+          <div className=" grid grid-cols-1 xsm:grid-cols-2 md:grid-cols-3   gap-5 lg:gap-10  my-12 ">
             {projectstate.map((data, index) => {
               return <ProjectCard key={index} {...data} />;
             })}
