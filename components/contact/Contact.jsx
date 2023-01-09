@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <AnimateLayout>
       <div className="w-padding max-w h-full py-20 background-dark animation">
-        <div className="w-[1150px] mx-auto  ">
+        <div className="w-full lg:w-[1150px] mx-auto  ">
           <div className=" py-8  ">
             <Title
               firstdata="get in"
