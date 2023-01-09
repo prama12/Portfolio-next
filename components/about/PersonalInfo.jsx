@@ -24,8 +24,8 @@ const PersonalInfo = () => {
     observer.observe(skillref.current);
   }, []);
   return (
-    <div className="  ">
-      <div className=" mx-auto max-w-[1200px]">
+    <div className=" mx-auto max-w-[1100px] ">
+      <div className="w-full ">
         <div className=" grid gap-5 mdd:grid-cols-2">
           <div className=" flex flex-col gap-4">
             <div>

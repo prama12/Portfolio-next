@@ -8,6 +8,16 @@
 * {
   @apply scroll-smooth;
 }
+/* selection style  */
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #ffb400;
+}
+::selection {
+  color: white;
+  background: #ffb400;
+}
 
 .max-w {
   @apply mx-auto max-w-[1800px];
