@@ -23,37 +23,40 @@ const PersonalInfo = () => {
     observer.observe(skillref.current);
   }, []);
   return (
-    <div className=" max-w-6xl w-padding mx-auto">
-      <div className=" w-full ">
-        <Header title="Personal Infos" />
-        <div className=" lg:grid grid-cols-12">
-          <div className=" mt-6 grid grid-cols-2 gap-y-3 col-span-7">
-            {Object.keys(about).map((key, index) => {
-              return (
-                <div
-                  className="  w-full overflow-auto flex flex-col md:flex-row "
-                  key={index}
-                >
-                  <span className=" font-normal text-gray-400 capitalize">
-                    {key}:
-                  </span>
-                  <span
-                    className=" mx-0 md:mx-2 text-primary-dark dark:text-primary-light text-sm font-semibold 
-                    "
+    <div className="  ">
+      <div className=" mx-auto max-w-[1200px]">
+        <div className=" grid gap-5 mdd:grid-cols-2">
+          <div className=" flex flex-col gap-4">
+            <div>
+              <Header title="Personal Infos" />
+            </div>
+            <div className="grid grid-cols-2 gap-y-3">
+              {Object.keys(about).map((key, index) => {
+                return (
+                  <div
+                    className=" w-full  sm:gap-3  mdd:gap-0 lg:gap-3 font-OpenSans text-[15px] leading-[24px] overflow-auto flex flex-col sm:flex-row mdd:flex-col lg:flex-row "
+                    key={index}
                   >
-                    {about[key]}
-                  </span>
-                </div>
-              );
-            })}
+                    <span className="opacity-70 text-primary-dark dark:text-primary-light capitalize">
+                      {key}:
+                    </span>
+                    <span
+                      className="text-primary-dark dark:text-primary-light text-sm font-bold 
+                    "
+                    >
+                      {about[key]}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
             <div className=" col-span-2 text-sm md:text-base my-6 ">
               <a href="/static/files/Prama-Pandit-cv.pdf" download={"Prama-CV"}>
                 <Button text="Download CV" icon={<DownloadIcon />} />
               </a>
             </div>
           </div>
-
-          <div className=" grid grid-cols-2 gap-5 col-span-5">
+          <div className=" grid grid-cols-2 gap-x-7 gap-y-5 ">
             {aboutcard.map((data, index) => {
               return <Card key={index} {...data} />;
             })}

@@ -35,7 +35,7 @@ const Project = () => {
 
   return (
     <AnimateLayout>
-      <div className=" dark:bg-dark-background animation pb-20">
+      <div className=" background-dark animation pb-20">
         <div className=" max-w-6xl mx-auto sm:pt-20 pt-14 w-padding ">
           <Title firstdata="my" seconddata="projects" backgroundtext="works" />
 

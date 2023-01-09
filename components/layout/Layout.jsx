@@ -8,7 +8,6 @@ const Layout = ({ children }) => {
   const { dark } = useContext(ThemeContext);
   return (
     <>
-     
       <div className="w-full">
         <div className={dark && "dark"}>
           <Toggle />

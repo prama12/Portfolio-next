@@ -13,7 +13,7 @@ module.exports = {
 
       md: "768px",
       // => @media (min-width: 768px) { ... }
-
+      mdd: "900px",
       lg: "1024px",
       // => @media (min-width: 1024px) { ... }
 
@@ -25,7 +25,7 @@ module.exports = {
     },
     fontFamily: {
       Poppins: ["Poppins", "sans-serif"],
-      "Open Sans": ["Open Sans", "sans-serif"],
+      OpenSans: ["Open Sans", "sans-serif"],
     },
     extend: {
       colors: {

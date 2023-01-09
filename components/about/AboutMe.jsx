@@ -6,14 +6,14 @@ import AnimateLayout from "../layout/AnimateLayout";
 const AboutMe = () => {
   return (
     <AnimateLayout>
-      <div className=" dark:bg-black pb-16 w-padding">
-        <div className=" py-10  ">
+      <div className=" background-dark pb-10 w-padding max-w">
+        <div className=" py-10">
           <Title firstdata="about" seconddata="me" backgroundtext="resume" />
         </div>
         <PersonalInfo />
       </div>
     </AnimateLayout>
-  )
+  );
 };
 
 export default AboutMe;

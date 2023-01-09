@@ -14,7 +14,7 @@
 }
 
 .w-padding {
-  @apply px-4 lg:px-12;
+  @apply px-4 md:px-6 lg:px-12;
 }
 
 .animation {
@@ -27,4 +27,8 @@
 
 .input {
   @apply border overflow-hidden flex items-center p-3 focus:border-primary-yellow   animation bg-transparent outline-none w-full;
+}
+
+.background-dark {
+  @apply dark:bg-dark-background;
 }

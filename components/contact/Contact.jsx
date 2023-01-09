@@ -7,7 +7,7 @@ import AnimateLayout from "../layout/AnimateLayout";
 const Contact = () => {
   return (
     <AnimateLayout>
-      <div className=" h-full pb-20 dark:bg-black animation">
+      <div className=" h-full pb-20 background-dark animation">
         <div className=" max-w-6xl mx-auto w-padding ">
           <div className=" py-8  ">
             <Title

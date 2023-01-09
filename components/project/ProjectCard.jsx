@@ -12,7 +12,7 @@ const ProjectCard = ({ link, title, imagelink }) => {
       <a href={link} className="relative" target="_blank" rel="noreferrer">
         <div
           className={`w-full absolute z-[99] ${
-            imageMagnify ? "top-0 " : " -top-52 "
+            imageMagnify ? "top-0 opacity-100 " : "opacity-0 -top-52 "
           } ease-in-out duration-500 top-0 h-full bg-primary-yellow flex items-center capitalize text-2xl tracking-wider font-bold text-white justify-center text-center`}
         >
           <div

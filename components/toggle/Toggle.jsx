@@ -8,10 +8,10 @@ const Toggle = () => {
   const { dark, setDark } = useContext(ThemeContext);
   return (
     <>
-      <div className=" fixed top-5 right-4 z-[99999]">
+      <div className=" fixed top-5 right-7 z-[99999]">
         <div
           onClick={() => setDark(!dark)}
-          className={`h-12 w-12 cursor-pointer flex items-center justify-center rounded-full p-0.5 ${
+          className={`h-12 w-12 cursor-pointer flex items-center justify-center rounded-full  ${
             dark ? " bg-primary-dark" : " bg-primary-light"
           }`}
         >
