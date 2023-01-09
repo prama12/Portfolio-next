@@ -8,7 +8,6 @@ const about = {
   phone: "+977 9814165604",
   email: "panditprama@gmail.com",
   linkedin: "something here",
-
   languages: "Nepali, English, Hindi",
 };
 export default about;

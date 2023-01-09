@@ -7,8 +7,8 @@ import AnimateLayout from "../layout/AnimateLayout";
 const Contact = () => {
   return (
     <AnimateLayout>
-      <div className=" h-full pb-20 background-dark animation">
-        <div className=" max-w-6xl mx-auto w-padding ">
+      <div className="w-padding max-w h-full py-20 background-dark animation">
+        <div className="w-[1150px] mx-auto  ">
           <div className=" py-8  ">
             <Title
               firstdata="get in"

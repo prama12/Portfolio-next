@@ -28,11 +28,11 @@ const PersonalInfo = () => {
       <div className="w-full ">
         <div className=" grid gap-5 mdd:grid-cols-2">
           <div className=" flex flex-col gap-4">
-            <div>
+            <div className="text-center sm:text-start">
               <Header title="Personal Infos" />
             </div>
             <div className="flex sm:hidden w-full items-center justify-center">
-              <div className="w-56 border-4 border-primary-dark dark:border-gray-600 relative h-56 rounded-full overflow-hidden">
+              <div className="w-40 h-40 xsm:w-56 xsm:h-56 border-4 border-primary-dark dark:border-gray-600 relative  rounded-full overflow-hidden">
                 <Image
                   src="/static/images/profile.jpg"
                   layout="fill"
@@ -42,27 +42,30 @@ const PersonalInfo = () => {
                 />
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-y-3">
-              {Object.keys(about).map((key, index) => {
-                return (
-                  <div
-                    className=" w-full  sm:gap-3  mdd:gap-0 lg:gap-3 font-OpenSans text-[15px] leading-[24px] overflow-auto flex flex-col sm:flex-row mdd:flex-col lg:flex-row "
-                    key={index}
-                  >
-                    <span className="opacity-70 text-primary-dark dark:text-primary-light capitalize">
-                      {key}:
-                    </span>
-                    <span
-                      className="text-primary-dark dark:text-primary-light text-sm font-bold 
-                    "
+            <div className="w-full  flex sm:justify-start justify-center">
+              <div className="grid grid-cols-2 gap-2 xsm:gap-3">
+                {Object.keys(about).map((key, index) => {
+                  return (
+                    <div
+                      className=" w-full sm:gap-3  mdd:gap-0 lg:gap-3 font-OpenSans text-[15px] leading-[24px] overflow-auto flex flex-col sm:flex-row mdd:flex-col lg:flex-row "
+                      key={index}
                     >
-                      {about[key]}
-                    </span>
-                  </div>
-                );
-              })}
+                      <span className="opacity-70 text-primary-dark dark:text-primary-light capitalize">
+                        {key}:
+                      </span>
+                      <span
+                        className="text-primary-dark dark:text-primary-light text-sm font-bold 
+                    "
+                      >
+                        {about[key]}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-            <div className=" col-span-2 text-sm md:text-base my-6 ">
+
+            <div className=" w-full  text-sm md:text-base my-6 ">
               <a href="/static/files/Prama-Pandit-cv.pdf" download={"Prama-CV"}>
                 <Button text="Download CV" icon={<DownloadIcon />} />
               </a>
