@@ -24,7 +24,7 @@ const Contactdetails = () => {
         <div className=" text-4xl text-primary-yellow">{contact.mailicon}</div>
         <div className="flex flex-col gap-1">
           <div className="">MAIL ME</div>
-          <div className=" font-bold z-[99999] text-primary-yellow hover:scale-105 animation  font-Poppins text-sm">
+          <div className=" font-bold z-[9999999] text-primary-yellow hover:scale-105 animation  font-Poppins text-sm">
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=panditprama@gmail.com"
               target="_blank"
@@ -49,7 +49,7 @@ const Contactdetails = () => {
       </div>
 
       <div className="w-full mt-5 text-primary-dark  dark:text-white text-xl sm:text-2xl md:text-3xl gap-5 py-2 flex items-center">
-        <div className="w-fit z-[999999] hover:text-blue-500 hover:scale-110 animation">
+        <div className="w-fit z-[999999999999] hover:text-blue-500 hover:scale-110 animation">
           <a
             href="https://www.facebook.com/prama.pandit.5/"
             rel="noreferrer"
@@ -58,12 +58,12 @@ const Contactdetails = () => {
             {contact.Facebook}
           </a>
         </div>
-        <div className="w-fit z-[999999] hover:text-gray-900 dark:hover:text-gray-700 hover:scale-110 animation">
+        <div className="w-fit z-[999999999999] hover:text-gray-900 dark:hover:text-gray-700 hover:scale-110 animation">
           <a href="https://github.com/prama12" rel="noreferrer" target="_blank">
             {contact.Github}
           </a>
         </div>
-        <div className="w-fit z-[999999] hover:text-[#0a66c2] hover:scale-110 animation">
+        <div className="w-fit z-[999999999999] hover:text-[#0a66c2] hover:scale-110 animation">
           <a
             href="https://www.linkedin.com/in/prama-pandit-35656a200/"
             rel="noreferrer"
@@ -72,7 +72,7 @@ const Contactdetails = () => {
             {contact.Linkedin}
           </a>
         </div>
-        <div className="w-fit z-[999999] hover:text-blue-400 hover:scale-110 animation">
+        <div className="w-fit z-[999999999999] hover:text-blue-400 hover:scale-110 animation">
           <a
             href="https://twitter.com/pramapandit_123"
             rel="noreferrer"
