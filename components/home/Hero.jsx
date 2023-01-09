@@ -28,7 +28,7 @@ const Hero = () => {
 
             {/* text  */}
             <div className="flex w-full items-center justify-center">
-              <div className="flex w-full lg:w-[500px]  justify-center items-center lg:items-start lg:justify-start flex-col gap-5">
+              <div className="flex w-full lg:w-[500px] xl:w-[700px]  justify-center items-center lg:items-start lg:justify-start flex-col gap-5">
                 <div className="font-bold flex flex-col items-center lg:items-start  uppercase font-Poppins tracking-wide text-xl sm:text-3xl md:leading-[52px] md:text-[42px] ">
                   <span className="text-primary-yellow flex items-center">
                     <span className="hidden xl:flex">-</span> I am Prama Pandit.
@@ -38,11 +38,13 @@ const Hero = () => {
                     web developer
                   </span>
                 </div>
-                <div className="text-primary-dark leading-5 md:leading-9 text-center lg:text-left text-xs sm:text-sm md:text-base font-OpenSans dark:text-primary-light ">
-                  I am a Frontend|Web developer from Nepal focused on crafting
-                  clean & user‑friendly experiences and robust systems, I am
-                  passionate about building excellent software that improves the
-                  lives of those around me.
+                <div className="text-primary-dark text-center opacity-80 font-medium lg:text-left text-xs sm:text-sm md:text-base font-OpenSans dark:text-primary-light ">
+                  <div className="leading-[20px] md:leading-[30px] ">
+                    I am a Frontend|Web developer from Nepal focused on crafting
+                    clean & user‑friendly experiences and robust systems, I am
+                    passionate about building excellent software that improves
+                    the lives of those around me.
+                  </div>
                 </div>
                 <div>
                   <Button
