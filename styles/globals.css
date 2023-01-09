@@ -8,6 +8,7 @@
 * {
   @apply scroll-smooth;
 }
+
 /* selection style  */
 ::-moz-selection {
   /* Code for Firefox */
