@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Header = ({ title }) => {
-    return (
-        <div className=' text-primary-dark dark:text-primary-light font-bold  text-3xl tracking-wider '>
-            {title.toUpperCase()}
-        </div>
-    )
-}
+  return (
+    <div className=" text-primary-dark uppercase dark:text-primary-light font-bold text-lg sm:text-2xl leading-[31px] md:text-[26px] tracking-wide ">
+      {title}
+    </div>
+  );
+};
 
-export default Header
+export default Header;

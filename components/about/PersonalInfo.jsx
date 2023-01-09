@@ -10,6 +10,7 @@ import skills from "../data/skills";
 import { education, experience } from "../data/experienceeducation";
 import EducationCard from "../commen/EducationCard";
 import { useRef, useEffect, useState } from "react";
+import Image from "next/image";
 
 const PersonalInfo = () => {
   const skillref = useRef();
@@ -29,6 +30,17 @@ const PersonalInfo = () => {
           <div className=" flex flex-col gap-4">
             <div>
               <Header title="Personal Infos" />
+            </div>
+            <div className="flex sm:hidden w-full items-center justify-center">
+              <div className="w-56 border-4 border-primary-dark dark:border-gray-600 relative h-56 rounded-full overflow-hidden">
+                <Image
+                  src="/static/images/profile.jpg"
+                  layout="fill"
+                  objectFit="cover"
+                  alt="image"
+                  quality={100}
+                />
+              </div>
             </div>
             <div className="grid grid-cols-2 gap-y-3">
               {Object.keys(about).map((key, index) => {
