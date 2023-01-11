@@ -15,6 +15,7 @@
   color: white;
   background: #ffb400;
 }
+
 ::selection {
   color: white;
   background: #ffb400;
@@ -42,4 +43,21 @@
 
 .background-dark {
   @apply dark:bg-dark-background;
+}
+
+::-webkit-scrollbar {
+  @apply bg-[#4e4e4b];
+  display: flex;
+  justify-content: center;
+  width: 7.5px;
+  height: 7px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-yellow opacity-75;
+  opacity: 0.6;
+  width: 5px;
+  height: 3px;
+  border-radius: 16px 16px 16px 16px;
 }
