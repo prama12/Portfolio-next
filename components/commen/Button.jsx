@@ -5,7 +5,7 @@ const Button = ({ text, icon, func = () => {} }) => {
   const [hovereffect, setHovereffect] = useState(false);
   return (
     <>
-      <div className="w-full flex sm:justify-start justify-center">
+      <div className="w-full flex justify-start ">
         <button
           onClick={() => func()}
           onMouseEnter={() => setHovereffect(true)}
@@ -17,7 +17,7 @@ const Button = ({ text, icon, func = () => {} }) => {
               hovereffect
                 ? " text-white"
                 : " text-primary-dark dark:text-primary-light"
-            } animation px-8 py-3  z-10 text-center rounded-full`}
+            } animation px-6 sm:px-8 sm:py-3 py-2  z-10 text-center rounded-full`}
           >
             {text?.toUpperCase()}
           </div>

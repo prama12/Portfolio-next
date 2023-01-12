@@ -11,8 +11,10 @@ import { education, experience } from "../data/experienceeducation";
 import EducationCard from "../commen/EducationCard";
 import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
+import ScrollTrigger from "react-scroll-trigger";
 
 const PersonalInfo = () => {
+  const [counterOn, setCounterOn] = useState(false);
   const skillref = useRef();
   const [myElementIsVisible, updateMyElementIsVisible] = useState();
   useEffect(() => {
@@ -28,11 +30,11 @@ const PersonalInfo = () => {
       <div className="w-full ">
         <div className=" grid gap-5 mdd:grid-cols-2">
           <div className=" flex flex-col gap-4">
-            <div className="text-center sm:text-start">
+            <div className="text-start">
               <Header title="Personal Infos" />
             </div>
-            <div className="flex sm:hidden w-full items-center justify-center">
-              <div className="w-40 h-40 xsm:w-56 xsm:h-56 border-4 border-primary-dark dark:border-gray-600 relative  rounded-full overflow-hidden">
+            <div className="flex sm:hidden w-full ">
+              <div className="w-40 h-40 border-4 border-primary-dark dark:border-gray-600 relative  rounded-full overflow-hidden">
                 <Image
                   src="/static/images/profile.jpg"
                   layout="fill"
@@ -42,7 +44,7 @@ const PersonalInfo = () => {
                 />
               </div>
             </div>
-            <div className="w-full  flex sm:justify-start justify-center">
+            <div className="w-full flex justify-start ">
               <div className="grid grid-cols-2 gap-2 xsm:gap-3">
                 {Object.keys(about).map((key, index) => {
                   return (
@@ -65,17 +67,22 @@ const PersonalInfo = () => {
               </div>
             </div>
 
-            <div className=" w-full  text-sm md:text-base my-6 ">
+            <div className=" w-full text-sm md:text-base my-2 sm:my-6 ">
               <a href="/static/files/Prama-Pandit-cv.pdf" download={"Prama-CV"}>
                 <Button text="Download CV" icon={<DownloadIcon />} />
               </a>
             </div>
           </div>
-          <div className=" grid grid-cols-2 gap-x-7 gap-y-5 ">
-            {aboutcard.map((data, index) => {
-              return <Card key={index} {...data} />;
-            })}
-          </div>
+          <ScrollTrigger
+            onEnter={() => setCounterOn(true)}
+            onExit={() => setCounterOn(false)}
+          >
+            <div className=" grid grid-cols-2 gap-x-7 gap-y-5 ">
+              {aboutcard.map((data, index) => {
+                return <Card key={index} {...data} counter={counterOn} />;
+              })}
+            </div>
+          </ScrollTrigger>
         </div>
 
         <div className=" flex justify-center mt-20 py-8">
