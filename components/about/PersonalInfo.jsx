@@ -33,7 +33,7 @@ const PersonalInfo = () => {
             <div className="text-start">
               <Header title="Personal Infos" />
             </div>
-            <div className="flex sm:hidden w-full ">
+            <div className="flex items-center justify-center xsm:hidden w-full ">
               <div className="w-40 h-40 border-4 border-primary-dark dark:border-gray-600 relative  rounded-full overflow-hidden">
                 <Image
                   src="/static/images/profile.jpg"
