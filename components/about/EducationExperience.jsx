@@ -5,7 +5,7 @@ import { education, experience } from "../data/experienceeducation";
 const EducationExperience = () => {
   return (
     <>
-      <div className="flex flex-col gap-20 mx-auto max-w-[1100px]">
+      <div className="flex flex-col gap-10 sm:gap-16 mx-auto max-w-[1100px]">
         <div className=" text-center">
           <Header title="experience & education" />
         </div>

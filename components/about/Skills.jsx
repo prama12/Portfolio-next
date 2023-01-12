@@ -16,7 +16,7 @@ const Skills = () => {
   }, []);
   return (
     <>
-      <div className="max-w-[1000px] mx-auto flex flex-col gap-10">
+      <div className="max-w-[1000px] mx-auto flex flex-col gap-5 sm:gap-10">
         <div className=" flex justify-center">
           <Header title="MY SKILLS" />
         </div>

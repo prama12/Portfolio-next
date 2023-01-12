@@ -8,7 +8,7 @@ const ProgressBar = ({ name, percent }) => {
     setPerentsetter(percent);
   }, [percent]);
   return (
-    <div className=" w-full p-5 xsm:p-10 xxsm:p-14 sm:px-24 md:p-12 col-span-6 md:col-span-3 flex flex-col items-center gap-3">
+    <div className=" w-full p-5 xsm:px-10 xxsm:px-14 sm:px-24 md:px-12 col-span-6 md:col-span-3 flex flex-col items-center gap-3">
       <CircularProgressbar
         styles={buildStyles({
           rotation: 0.25,

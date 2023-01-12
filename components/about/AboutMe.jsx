@@ -11,7 +11,7 @@ const AboutMe = () => {
         <div className=" py-10">
           <Title firstdata="about" seconddata="me" backgroundtext="resume" />
         </div>
-        <div className="flex flex-col gap-20">
+        <div className="flex flex-col gap-14 sm:gap-20">
           <PersonalInfo />
           <Skills />
           <EducationExperience />

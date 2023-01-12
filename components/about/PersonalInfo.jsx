@@ -13,8 +13,8 @@ const PersonalInfo = () => {
   const [counterOn, setCounterOn] = useState(false);
 
   return (
-    <div className=" mx-auto max-w-[1100px]">
-      <div className=" grid gap-5 mdd:grid-cols-2">
+    <div className=" mx-auto w-full px-0 md:px-10 lg:w-[1100px]">
+      <div className="w-full grid gap-5 mdd:grid-cols-2">
         <div className=" flex flex-col gap-4">
           {/* title  */}
           <div className="text-center xsm:text-left">

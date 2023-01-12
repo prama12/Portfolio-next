@@ -1,4 +1,5 @@
 import JobIcon from "../../public/static/icons/job.svg";
+import Dash from "../../public/static/icons/dash.svg";
 
 const EducationCard = ({ description, uni, date, degree }) => {
   return (
@@ -15,16 +16,17 @@ const EducationCard = ({ description, uni, date, degree }) => {
           <div className=" text-primary-dark dark:text-primary-light font-semibold bg-gray-100 dark:bg-primary-dark px-2 mb-2 rounded-2xl w-fit text-sm ">
             {date}
           </div>
-          <div className=" sm:flex  items-center ">
-            <div className=" font-semibold uppercase text-lg text-primary-dark dark:text-primary-light mr-2">
-              {degree}
-            </div>
-            <div className="hidden sm:block w-6 bg-primary-dark dark:bg-primary-light h-[2px]"></div>
-            <div className=" ml-3 uppercase font-semibold text-gray-500 dark:text-primary-light">
-              {uni}
+          <div className="font-semibold uppercase text-base leading-5  text-primary-dark dark:text-primary-light ">
+            <div className="">
+              <span className="text-white pr-1"> {degree}</span>
+              <span className="opacity-90 text-5xl">-</span>
+              {/* <Dash className="w-fit opacity-90 " /> */}
+              <span className="opacity-90 ">{uni}</span>
             </div>
           </div>
-          <div className=" text-primary-dark text-sm">{description}</div>
+          <div className=" text-primary-dark opacity-90 dark:text-primary-light text-sm">
+            {description}
+          </div>
         </div>
       </div>
     </>
