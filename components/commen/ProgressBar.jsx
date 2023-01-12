@@ -8,7 +8,7 @@ const ProgressBar = ({ name, percent }) => {
     setPerentsetter(percent);
   }, [percent]);
   return (
-    <div className=" w-full p-8 xsm:p-10 sm:p-12 md:p-10 lg:p-12  col-span-6 md:col-span-3 flex flex-col items-center gap-3">
+    <div className=" w-full p-5 xsm:p-10 xxsm:p-14 sm:px-24 md:p-12 col-span-6 md:col-span-3 flex flex-col items-center gap-3">
       <CircularProgressbar
         styles={buildStyles({
           rotation: 0.25,
@@ -20,13 +20,13 @@ const ProgressBar = ({ name, percent }) => {
           trailColor: "#d6d6d6",
           backgroundColor: "#3e98c7",
         })}
-        strokeWidth={8}
+        strokeWidth={7}
         value={percentsetter}
         maxValue={100}
         text={`${percentsetter}%`}
       />
-      <div className=" font-medium text-primary-dark dark:text-primary-light">
-        {name.toUpperCase()}
+      <div className=" font-medium uppercase text-xs sm:text-sm md:text-base text-primary-dark dark:text-primary-light">
+        {name}
       </div>
     </div>
   );
