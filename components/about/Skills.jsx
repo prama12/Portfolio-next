@@ -20,6 +20,7 @@ const Skills = () => {
         <div className=" flex justify-center">
           <Header title="MY SKILLS" />
         </div>
+
         <div ref={skillref} className=" grid grid-cols-12  w-full ">
           {myElementIsVisible &&
             skills.map((data, index) => {

@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
 const ProgressBar = ({ name, percent }) => {
-  const [percentsetter, setPerentsetter] = useState(1);
+  const [percentsetter, setPerentsetter] = useState(0);
   useEffect(() => {
     setPerentsetter(percent);
   }, [percent]);
