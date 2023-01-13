@@ -13,16 +13,16 @@ const PersonalInfo = () => {
   const [counterOn, setCounterOn] = useState(false);
 
   return (
-    <div className=" mx-auto w-full px-0 md:px-10 lg:w-[1100px]">
+    <div className=" mx-auto w-full px-0 md:px-10 lg:px-0 lg:w-[980px] xl:w-[1100px]">
       <div className="w-full grid gap-5 mdd:grid-cols-2">
-        <div className=" flex flex-col gap-4">
+        <div className="w-full flex flex-col gap-4">
           {/* title  */}
-          <div className="text-center xsm:text-left">
+          <div className="text-left">
             <Header title="Personal Infos" />
           </div>
 
           {/* image  */}
-          <div className="flex items-center justify-center xsm:hidden w-full ">
+          <div className="flex  xsm:hidden w-full ">
             <div className="w-40 h-40 border-4 border-primary-dark dark:border-gray-600 relative  rounded-full overflow-hidden">
               <Image
                 src="/static/images/profile.jpg"
@@ -65,18 +65,19 @@ const PersonalInfo = () => {
             </a>
           </div>
         </div>
-
         {/* cards */}
-        <ScrollTrigger
-          onEnter={() => setCounterOn(true)}
-          onExit={() => setCounterOn(false)}
-        >
-          <div className=" grid grid-cols-2 gap-x-7 gap-y-5 ">
-            {aboutcard.map((data, index) => {
-              return <Card key={index} {...data} counter={counterOn} />;
-            })}
-          </div>
-        </ScrollTrigger>
+        <div className="w-full">
+          <ScrollTrigger
+            onEnter={() => setCounterOn(true)}
+            onExit={() => setCounterOn(false)}
+          >
+            <div className=" grid grid-cols-2 gap-x-7 gap-y-5 ">
+              {aboutcard.map((data, index) => {
+                return <Card key={index} {...data} counter={counterOn} />;
+              })}
+            </div>
+          </ScrollTrigger>
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import CountUp from "react-countup";
 
 const Card = ({ number, title, counter }) => {
   return (
-    <div className=" w-full  bg-transparent flex flex-col border dark:border-primary-dark border-primary-light  shadow-sm rounded-sm gap-2 px-5 py-3 ">
+    <div className=" w-full  bg-transparent flex flex-col border dark:border-primary-dark border-primary-light  shadow rounded gap-2 px-5 py-3 ">
       <div className=" flex items-start  text-primary-yellow">
         <div className=" text-3xl sm:text-5xl mdd:text-6xl font-bold font-Poppins">
           {counter && <CountUp start={0} end={number} duration={1} delay={0} />}
