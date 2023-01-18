@@ -1,7 +1,7 @@
 export const education = [
   {
     degree: "Bachelors Level",
-    date: "2075-Now",
+    date: "2075-Current",
     uni: "Saptaganaki Multiple Campus",
     description:
       "Currently graduating on Bachelors of Computer Application (BCA)",
@@ -34,13 +34,13 @@ export const experience = [
     uni: "themeforest",
     description:
       "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit",
-    date: "2018-2022",
+    date: "2020-2021",
   },
   {
     degree: "web developer",
     uni: "themeforest",
     description:
       "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit",
-    date: "2018-2022",
+    date: "2018-2020",
   },
 ];
