@@ -1,10 +1,6 @@
 import AddressIcon from "../../public/static/icons/map.svg";
 import Mailicon from "../../public/static/icons/mail.svg";
 import Phone from "../../public/static/icons/phone.svg";
-import Facebook from "../../public/static/icons/facebook.svg";
-import Github from "../../public/static/icons/github-logo.svg";
-import Linkedin from "../../public/static/icons/linkedin.svg";
-import Twitter from "../../public/static/icons/twitter.svg";
 
 const contact = {
   title: "DON'T BE SHY !",
@@ -13,10 +9,6 @@ const contact = {
   addressicon: <AddressIcon />,
   mailicon: <Mailicon />,
   Phone: <Phone />,
-  Facebook: <Facebook />,
-  Github: <Github />,
-  Linkedin: <Linkedin />,
-  Twitter: <Twitter />,
   address: "Bharatpur-5, Prembasti, Chitwan, Nepal",
   mail: "panditprama@gmail.com",
   phone: "+977 9814165604",

@@ -4,20 +4,19 @@ export const education = [
     date: "2075-Current",
     uni: "Saptaganaki Multiple Campus",
     description:
-      "Currently graduating on Bachelors of Computer Application (BCA)",
+      "Currently graduating on Bachelors of Computer Application(BCA)",
   },
   {
     degree: "+2 level",
     date: "2073-2075",
     uni: "Saptaganaki Multiple Campus",
-    description:
-      "Completed 11th and 12th from Management Stream with 2.53 aggregate GPA",
+    description: "Completed 11th and 12th from Management Stream.",
   },
   {
     degree: "School level",
     date: "2072",
     uni: "Shree Satyawati Higher Secondary School",
-    description: "Completed school level on BS 2072 with 3 GPA grades",
+    description: "Completed school level on BS 2072.",
   },
 ];
 

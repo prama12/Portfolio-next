@@ -1,5 +1,6 @@
 import React from "react";
 import contact from "../data/contact";
+import data from "../data/socialData";
 const Contactdetails = () => {
   return (
     <div className=" py-10 text-primary-dark dark:text-primary-light">
@@ -48,39 +49,21 @@ const Contactdetails = () => {
         </div>
       </div>
 
-      <div className="w-full mt-5 text-primary-dark  dark:text-white text-xl sm:text-2xl md:text-3xl gap-5 py-2 flex items-center">
-        <div className="w-fit z-[999999999999] hover:text-blue-500 hover:scale-110 animation">
-          <a
-            href="https://www.facebook.com/prama.pandit.5/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            {contact.Facebook}
-          </a>
-        </div>
-        <div className="w-fit z-[999999999999] hover:text-gray-900 dark:hover:text-gray-700 hover:scale-110 animation">
-          <a href="https://github.com/prama12" rel="noreferrer" target="_blank">
-            {contact.Github}
-          </a>
-        </div>
-        <div className="w-fit z-[999999999999] hover:text-[#0a66c2] hover:scale-110 animation">
-          <a
-            href="https://www.linkedin.com/in/prama-pandit-35656a200/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            {contact.Linkedin}
-          </a>
-        </div>
-        <div className="w-fit z-[999999999999] hover:text-blue-400 hover:scale-110 animation">
-          <a
-            href="https://twitter.com/pramapandit_123"
-            rel="noreferrer"
-            target="_blank"
-          >
-            {contact.Twitter}
-          </a>
-        </div>
+      <div className="w-full mt-5    text-xl sm:text-2xl md:text-3xl gap-5 py-2 flex items-center">
+        {data.map((data) => {
+          return (
+            <div key={data.id} className="w-fit">
+              <a
+                className="w-10 h-10 bg-primary-light dark:bg-primary-dark shadow-sm dark:shadow-gray-400 flex items-center justify-center rounded-full    text-xl hover:scale-110 animation text-primary-dark z-[999999999999] hover:text-blue-500 hover:dark:text-blue-500 dark:text-white"
+                href={data.link}
+                rel="noreferrer"
+                target="_blank"
+              >
+                {data.Icon}
+              </a>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
