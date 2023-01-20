@@ -1,7 +1,6 @@
 import React from "react";
 import contact from "../data/contact";
 import data from "../data/socialData";
-import MapOpener from "../google map/MapOpener";
 import MyModal from "../google map/MyModal";
 const Contactdetails = () => {
   return (
