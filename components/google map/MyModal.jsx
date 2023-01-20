@@ -16,7 +16,12 @@ export default function MyModal({ text }) {
   return (
     <>
       <div className="z-[9]">
-        <div type="button" onClick={openModal} className="">
+        <div
+          data-name={text}
+          type="button"
+          onClick={openModal}
+          className=" text-head text-left animation relative "
+        >
           {text}
         </div>
       </div>
@@ -50,7 +55,13 @@ export default function MyModal({ text }) {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-8/12  transform overflow-hidden rounded-xl bg-white text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className=" md:w-8/12 w-full relative 2xl:w-[1200px] sm:w-10/12 transform overflow-hidden rounded-xl bg-white text-left align-middle shadow-xl transition-all">
+                  <button
+                    onClick={closeModal}
+                    className="w-10 absolute rounded-full shadow-lg right-0 h-10 bg-primary-light text-sm font-Poppins font-bold sm:text-base lg:text-xl flex items-center justify-center text-primary-dark dark:bg-primary-dark dark:text-primary-light"
+                  >
+                    X
+                  </button>
                   <Map />
                 </Dialog.Panel>
               </Transition.Child>
