@@ -29,7 +29,7 @@ const Contactdetails = () => {
           <div className="">MAIL ME</div>
           <div
             data-name={contact.mail}
-            className=" relative text-head font-bold z-[9999999] text-primary-dark dark:bg-primary-light hover:scale-105 animation  font-Poppins text-sm"
+            className=" relative text-head font-bold z-[9999999] text-primary-dark dark:text-primary-light hover:scale-105 animation  font-Poppins text-sm"
           >
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=panditprama@gmail.com"
