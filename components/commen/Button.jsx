@@ -7,6 +7,7 @@ const Button = ({ text, icon, func = () => {} }) => {
     <>
       <div className="w-full flex justify-start ">
         <button
+          type="submit"
           onClick={() => func()}
           onMouseEnter={() => setHovereffect(true)}
           onMouseLeave={() => setHovereffect(false)}
