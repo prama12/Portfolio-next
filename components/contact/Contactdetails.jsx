@@ -1,6 +1,8 @@
 import React from "react";
 import contact from "../data/contact";
 import data from "../data/socialData";
+import MapOpener from "../google map/MapOpener";
+import MyModal from "../google map/MyModal";
 const Contactdetails = () => {
   return (
     <div className=" py-10 text-primary-dark dark:text-primary-light">
@@ -15,9 +17,9 @@ const Contactdetails = () => {
         </div>
         <div className="flex flex-col gap-1">
           <div className="">ADDRESS POINT</div>
-          <div className=" font-bold  font-Poppins text-sm">
-            {contact.address}
-          </div>
+          <button className="z-[9999999] animation hover:scale-105 font-bold font-Poppins text-sm">
+            <MyModal text={contact.address} />
+          </button>
         </div>
       </div>
 
@@ -49,7 +51,7 @@ const Contactdetails = () => {
         </div>
       </div>
 
-      <div className="w-full mt-5    text-xl sm:text-2xl md:text-3xl gap-5 py-2 flex items-center">
+      <div className="w-full mt-5 text-xl sm:text-2xl md:text-3xl gap-5 py-2 flex items-center">
         {data.map((data) => {
           return (
             <div key={data.id} className="w-fit">
