@@ -16,6 +16,8 @@ const ContactForm = () => {
       Body: formState.message,
     };
 
+
+    
     if (window.Email) {
       window.Email.send(config).then(
         (result) => {
