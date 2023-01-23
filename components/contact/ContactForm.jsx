@@ -13,11 +13,13 @@ const ContactForm = () => {
       To: "panditprama@gmail.com",
       From: formState.email,
       Subject: formState.sub,
+
       Body: formState.message,
     };
 
     if (window.Email) {
       window.Email.send(config).then(
+        
         (result) => {
           alert("message sent successfully");
         },
