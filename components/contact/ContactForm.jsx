@@ -19,7 +19,6 @@ const ContactForm = () => {
 
     if (window.Email) {
       window.Email.send(config).then(
-        
         (result) => {
           alert("message sent successfully");
         },
