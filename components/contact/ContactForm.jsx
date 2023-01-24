@@ -37,9 +37,11 @@ const ContactForm = () => {
       ref={form}
       onSubmit={sendEmail}
       className="  w-full grid gap-5 text-primary-dark dark:text-primary-light animation"
+      autocomplete="off"
     >
       <div className=" z-[999]  col-span-2 sm:col-span-1 ">
         <input
+          required
           className="input capitalize rounded-full "
           placeholder="YOUR NAME"
           type="text"
@@ -48,8 +50,9 @@ const ContactForm = () => {
           onChange={changeHandler}
         />
       </div>
-      <div className="z-[999] col-span-2 sm:col-span-1 ">
+      <div className="z-[999] col-span-2 sm:col-span-1">
         <input
+          required
           className=" input rounded-full"
           placeholder="YOUR EMAIL"
           type="email"
@@ -60,6 +63,7 @@ const ContactForm = () => {
       </div>
       <div className="z-[999] col-span-2 ">
         <input
+          required
           className="input rounded-full"
           placeholder="YOUR SUBJECT"
           type="text"
@@ -70,6 +74,7 @@ const ContactForm = () => {
       </div>
       <div className="z-[999] col-span-2 ">
         <textarea
+          required
           className=" input rounded-3xl h-32"
           placeholder="YOUR MESSAGE"
           name="message"
