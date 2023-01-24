@@ -36,7 +36,7 @@ const ContactForm = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className=" lg:py-10 w-full grid gap-5 text-primary-dark dark:text-primary-light animation"
+      className="  w-full grid gap-5 text-primary-dark dark:text-primary-light animation"
     >
       <div className=" z-[999]  col-span-2 sm:col-span-1 ">
         <input

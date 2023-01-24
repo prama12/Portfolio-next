@@ -16,21 +16,21 @@ const Contactdetails = () => {
               {contact.addressicon}
             </div>
             <div className="flex flex-col gap-1">
-              <div className="">ADDRESS POINT</div>
-              <button className="z-[9999999] animation hover:scale-105 font-bold font-Poppins text-sm">
+              <div className="text-sm sm:text-base">ADDRESS POINT</div>
+              <button className="z-[9999999] animation hover:scale-105 font-bold font-Poppins text-xs sm:text-sm">
                 <MyModal text={contact.address} />
               </button>
             </div>
           </div>
           <div className=" flex items-center gap-4 ">
-            <div className=" text-4xl text-primary-yellow">
+            <div className=" text-3xl sm:text-4xl text-primary-yellow">
               {contact.mailicon}
             </div>
             <div className="flex flex-col gap-1">
-              <div className="">MAIL ME</div>
+              <div className="text-sm sm:text-base">MAIL ME</div>
               <div
                 data-name={contact.mail}
-                className=" relative text-head font-bold z-[9999999] text-primary-dark dark:text-primary-light hover:scale-105 animation  font-Poppins text-sm"
+                className=" relative text-head font-bold z-[9999999] text-primary-dark dark:text-primary-light hover:scale-105 animation  font-Poppins text-xs sm:text-sm"
               >
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=panditprama@gmail.com"
@@ -43,12 +43,12 @@ const Contactdetails = () => {
             </div>
           </div>
           <div className=" flex items-center gap-4 ">
-            <div className=" text-2xl rounded-md text-white dark:text-black p-1 bg-primary-yellow">
+            <div className=" text-xl sm:text-2xl rounded-md text-white dark:text-black p-1 bg-primary-yellow">
               {contact.Phone}
             </div>
             <div className="flex flex-col gap-1">
-              <div className="">CALL ME</div>
-              <div className=" font-bold  font-Poppins text-sm">
+              <div className="text-sm sm:text-base">CALL ME</div>
+              <div className=" font-bold  font-Poppins text-xs sm:text-sm">
                 {contact.phone}
               </div>
             </div>

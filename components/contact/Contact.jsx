@@ -9,7 +9,7 @@ const Contact = () => {
     <AnimateLayout>
       <div className="w-padding max-w h-full pt-14 pb-24 background-dark animation">
         <div className="w-full md:w-[750px] lg:w-[950px] xl:w-[1150px] mx-auto   ">
-          <div className="flex flex-col gap-10 md:gap-14 lg:gap-16">
+          <div className="flex flex-col gap-10 md:gap-14 lg:gap-20">
             <div className="">
               <Title
                 firstdata="get in"
@@ -17,7 +17,7 @@ const Contact = () => {
                 backgroundtext="contact"
               />
             </div>
-            <div className="lg:grid grid-cols-12 gap-4">
+            <div className="flex flex-col lg:grid grid-cols-12 gap-10">
               <div className=" col-span-4">
                 <Contactdetails />
               </div>

@@ -18,12 +18,12 @@ const Button = ({ text, icon, func = () => {} }) => {
               hovereffect
                 ? " text-white"
                 : " text-primary-dark dark:text-primary-light"
-            } animation px-6 uppercase sm:px-8 sm:py-3 py-2  text-sm z-10 text-center rounded-full`}
+            } animation px-6 uppercase sm:px-8 sm:py-3 py-2 text-xs sm:text-sm z-10 text-center rounded-full`}
           >
             {text}
           </div>
           <div className=" z-10 w-12 h-12 rounded-full bg-primary-yellow  flex justify-center items-center">
-            <div className="text-2xl text-white ">{icon}</div>
+            <div className=" text-xl sm:text-2xl text-white ">{icon}</div>
           </div>
           <div
             className={`absolute ${

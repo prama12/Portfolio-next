@@ -38,7 +38,7 @@
 }
 
 .input {
-  @apply border border-primary-dark dark:border-primary-dark dark:border tracking-wider dark:border-opacity-30  border-opacity-50 text-opacity-60 dark:bg-opacity-30 dark:opacity-70 text-primary-dark bg-transparent  dark:text-primary-light font-medium font-OpenSans dark:bg-primary-dark  overflow-hidden flex items-center px-5 py-3 text-sm  focus:border-primary-yellow animation outline-none w-full;
+  @apply border border-primary-dark dark:border-primary-dark dark:border tracking-wider dark:border-opacity-30  border-opacity-50 text-opacity-60 dark:bg-opacity-30 dark:opacity-70 text-primary-dark bg-transparent  dark:text-primary-light font-medium font-OpenSans dark:bg-primary-dark  overflow-hidden flex items-center px-5 py-3 text-xs sm:text-sm  focus:border-primary-yellow animation outline-none w-full;
 }
 
 .background-dark {
