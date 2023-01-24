@@ -11,7 +11,7 @@ const Toggle = () => {
       <div className=" fixed top-5 right-7 z-[99999]">
         <div
           onClick={() => setDark(!dark)}
-          className={`h-12 w-12 cursor-pointer flex items-center justify-center rounded-full  ${
+          className={` w-11 h-11 sm:h-12 sm:w-12 cursor-pointer flex items-center justify-center rounded-full  ${
             dark ? " bg-primary-dark" : " bg-primary-light"
           }`}
         >

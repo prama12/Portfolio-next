@@ -1,46 +1,46 @@
-import React, { useState } from "react";
 import Button from "../commen/Button";
 import Telegram from "../../public/static/icons/telegram-plane.svg";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [formState, setFormState] = useState({});
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const config = {
-      SecureToken: "3ae5ade4-73b6-4c9a-b3fe-9942e2169fda",
-      To: "panditprama@gmail.com",
-      From: formState.email,
-      Subject: formState.sub,
 
-      Body: formState.message,
-    };
-
-    if (window.Email) {
-      window.Email.send(config).then(
+    emailjs
+      .sendForm(
+        "service_0p8p8md",
+        "template_1oft1ur",
+        form.current,
+        "c2K6ZexAGRvOI8zn0"
+      )
+      .then(
         (result) => {
-          alert("message sent successfully");
+          alert("Message sent successfully");
+          setFormState("");
         },
         (error) => {
-          alert("message can't sent");
+          console.log("message does't sent");
+          setFormState("");
         }
       );
-    }
   };
 
   const changeHandler = (e) => {
     setFormState({ ...formState, [e.target.name]: e.target.value });
   };
-
   return (
     <form
+      ref={form}
       onSubmit={sendEmail}
-      className=" py-10 grid gap-5 p-6 text-primary-dark dark:text-primary-light animation"
+      className=" lg:py-10 w-full grid gap-5 text-primary-dark dark:text-primary-light animation"
     >
       <div className=" z-[999]  col-span-2 sm:col-span-1 ">
         <input
-          className="input rounded-full "
+          className="input capitalize rounded-full "
           placeholder="YOUR NAME"
           type="text"
           name="name"
@@ -63,9 +63,9 @@ const ContactForm = () => {
           className="input rounded-full"
           placeholder="YOUR SUBJECT"
           type="text"
-          value={formState.sub || ""}
+          value={formState.subject || ""}
           onChange={changeHandler}
-          name="sub"
+          name="subject"
         />
       </div>
       <div className="z-[999] col-span-2 ">

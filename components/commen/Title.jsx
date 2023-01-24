@@ -5,7 +5,7 @@ const Title = ({ firstdata, seconddata, backgroundtext }) => {
     <div className="relative flex justify-center items-center overflow-hidden">
       <div
         data-name={backgroundtext}
-        className="text-head cursor-pointer relative text-5xl sm:text-7xl mdd:text-[110px] leading-[77px] font-Poppins font-bold tracking-[10px] text-primary-dark dark:text-primary-light opacity-10 dark:opacity-20 uppercase"
+        className="text-head cursor-pointer relative text-[54px] sm:text-7xl mdd:text-[110px] leading-[77px] font-Poppins font-bold tracking-wider sm:tracking-[10px] text-primary-dark dark:text-primary-light opacity-10 dark:opacity-20 uppercase"
       >
         {backgroundtext}
       </div>

@@ -45,6 +45,18 @@
   @apply dark:bg-dark-background;
 }
 
+/* for scroolbar hidden  */
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
 ::-webkit-scrollbar {
   @apply bg-[#4e4e4b];
   display: flex;
