@@ -1,8 +1,5 @@
-import { useRef, useEffect, useState } from "react";
 import Header from "../commen/Header";
-import Progress from "../commen/Progress";
 import ProgressBar from "../commen/ProgressBar";
-import Skill2 from "../commen/Skill2";
 import skills from "../data/skills";
 
 const Skills = () => {
@@ -16,7 +13,7 @@ const Skills = () => {
         <div className=" grid grid-cols-2 px-5 xsm:px-10 md:grid-cols-4 gap-20 md:gap-10 lg:gap-20 w-full ">
           {skills.map((data, index) => {
             console.log("skill", data);
-            return <Progress key={index} {...data} />;
+            return <ProgressBar key={index} {...data} />;
           })}
         </div>
       </div>
