@@ -11,10 +11,6 @@ const ProgressBar = ({ name, percent }) => {
     <div className=" w-full p-5 xsm:px-10 xxsm:px-14 sm:px-24 md:px-12 col-span-6 md:col-span-3 flex flex-col items-center gap-3">
       <CircularProgressbar
         styles={buildStyles({
-          rotation: 0.25,
-          strokeLinecap: "butt",
-          textSize: "16px",
-          pathTransitionDuration: 2,
           pathColor: `#ffb400`,
           textColor: "#666666",
           trailColor: "#d6d6d6",
