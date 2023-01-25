@@ -21,7 +21,7 @@ const Hero = () => {
                 <Image
                   src="/static/images/profile.jpg"
                   fill
-                  cover
+                  objectFit="cover"
                   alt="image"
                   quality={100}
                 />
