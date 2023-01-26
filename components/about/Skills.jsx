@@ -14,10 +14,6 @@ const Skills = () => {
           {skills.map((data, index) => {
             console.log("skill", data);
             return <ProgressBar key={index} {...data} />;
-
-
-
-            
           })}
         </div>
       </div>
