@@ -1,7 +1,7 @@
 const skills = [
   {
     name: "HTML|HTML5",
-    percent: "80",
+    percent: "90",
   },
   {
     name: "CSS|CSS3",
@@ -21,8 +21,9 @@ const skills = [
   },
   {
     name: "Next js",
-    percent: "60",
+    percent: "80",
   },
+  { name: "Typescript", percent: "70" },
 ];
 
 export default skills;
