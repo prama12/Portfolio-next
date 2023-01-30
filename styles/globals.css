@@ -83,3 +83,7 @@
 .text-head:hover::before {
   @apply w-full;
 }
+
+.selectingcolor {
+  color: rgb(255, 180, 0);
+}
