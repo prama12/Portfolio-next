@@ -7,7 +7,7 @@ const Card = ({ number, title, counter }) => {
         <div className=" text-3xl sm:text-5xl lg:text-6xl font-bold font-Poppins">
           {counter && <CountUp start={0} end={number} duration={1} delay={0} />}
         </div>
-        <div className=" font-semibold text-3xl font-Poppins sm:text-5xl lg:text-6xl">
+        <div className="font-semibold text-3xl font-Poppins sm:text-5xl lg:text-6xl">
           +
         </div>
       </div>
