@@ -11,7 +11,7 @@ const Title = ({ firstdata, seconddata, backgroundtext }) => {
       </div>
       <div className="absolute text-3xl mdd:text-[55px] font-bold tracking-wide text-primary-dark font-Poppins dark:text-primary-light uppercase ">
         <span>{firstdata}</span>
-        <span className=" text-primary-yellow uppercase">{seconddata}</span>
+        <span className=" text-primary-yellow uppercase"> {seconddata}</span>
       </div>
     </div>
   );
