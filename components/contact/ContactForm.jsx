@@ -8,10 +8,8 @@ import Tick from "../../public/static/icons/tick.svg";
 const ContactForm = () => {
   const [formState, setFormState] = useState({});
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_0p8p8md",
@@ -21,10 +19,10 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
-          toast.custom((t) => (
+          toast.custom((e) => (
             <div
               className={`${
-                t.visible ? "animate-enter" : "animate-leave"
+                e.visible ? "animate-enter" : "animate-leave"
               } bg-primary-light border flex items-center gap-3 dark:bg-dark-background rounded-lg shadow-sm text-primary-dark font-Poppins font-semibold text-sm dark:text-primary-light border-primary-yellow px-4 py-3`}
             >
               <div className="w-5 h-5 rounded-full flex items-center justify-center text-sm text-primary-light font-Poppins font-semibold bg-primary-yellow">
