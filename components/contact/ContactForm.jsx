@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import Telegram from "../../public/static/icons/telegram-plane.svg";
 import toast, { Toaster } from "react-hot-toast";
 import Button from "../commen/Button";
-import Tick from "../../public/static/icons/tick.svg";
+// import Tick from "../../public/static/icons/tick.svg";
 
 // useform imports
 import { useForm } from "react-hook-form";
