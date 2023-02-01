@@ -1,6 +1,6 @@
 const aboutcard = [
   {
-    number: "200",
+    number: "2",
     title: (
       <p className="flex flex-col">
         <span>Years of </span>
@@ -9,7 +9,7 @@ const aboutcard = [
     ),
   },
   {
-    number: "100",
+    number: "20",
     title: (
       <p className="flex flex-col">
         <span>completed</span>
@@ -18,7 +18,7 @@ const aboutcard = [
     ),
   },
   {
-    number: "80",
+    number: "30",
     title: (
       <p className="flex flex-col">
         <span>happy </span>
