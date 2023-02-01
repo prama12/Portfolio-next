@@ -9,18 +9,6 @@
   @apply scroll-smooth;
 }
 
-/* selection style  */
-::-moz-selection {
-  /* Code for Firefox */
-  color: white;
-  background: #ffb400;
-}
-
-::selection {
-  color: white;
-  background: #ffb400;
-}
-
 .max-w {
   @apply mx-auto max-w-[1800px];
 }
@@ -37,15 +25,38 @@
   clip-path: polygon(0 0, 40% 0, 100% 100%, 0% 100%);
 }
 
-.input {
-  @apply border border-primary-dark dark:border-primary-dark dark:border tracking-wider dark:border-opacity-30  border-opacity-50 text-opacity-60 dark:bg-opacity-30 dark:opacity-70 text-primary-dark bg-transparent  dark:text-primary-light font-medium font-OpenSans dark:bg-primary-dark  overflow-hidden flex items-center px-5 py-3 text-xs sm:text-sm  focus:border-primary-yellow animation outline-none w-full;
-}
-
 .background-dark {
   @apply dark:bg-dark-background;
 }
 
-/* for scroolbar hidden  */
+.input {
+  @apply border border-primary-dark dark:border-primary-dark dark:border tracking-wider dark:border-opacity-30  border-opacity-50 text-opacity-60 dark:bg-opacity-30 dark:opacity-70 text-primary-dark bg-transparent  dark:text-primary-light font-medium font-OpenSans dark:bg-primary-dark  overflow-hidden flex items-center px-5 py-3 text-xs sm:text-sm  focus:border-primary-yellow animation outline-none w-full;
+}
+
+/* validation error style*/
+.is-invalid {
+  @apply focus:text-red-500 focus:border focus:border-red-500 w-full;
+}
+.invalid-feedback {
+  @apply text-xs pl-5 text-red-500 font-semibold;
+}
+
+/* ...................................................................................... */
+
+/* selection style*/
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #ffb400;
+}
+::selection {
+  color: white;
+  background: #ffb400;
+}
+
+/* ...................................................................................... */
+
+/* for scroolbar hidden */
 @layer utilities {
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
@@ -57,6 +68,9 @@
   }
 }
 
+/* ...................................................................................... */
+
+/* for custom scrollbar */
 ::-webkit-scrollbar {
   @apply bg-[#4e4e4b];
   display: flex;
@@ -65,7 +79,6 @@
   height: 5px;
   border-radius: 0px 0px 0px 0px;
 }
-
 ::-webkit-scrollbar-thumb {
   @apply bg-primary-yellow opacity-75;
   opacity: 0.6;
@@ -74,16 +87,21 @@
   border-radius: 16px 16px 16px 16px;
 }
 
+/* ...................................................................................... */
+
+/* for animated text */
 .text-head::before {
   content: attr(data-name);
   transition: width 2s linear;
   @apply text-primary-yellow inset-0 overflow-hidden w-0 absolute;
 }
-
 .text-head:hover::before {
   @apply w-full;
 }
 
+/* ...................................................................................... */
+
+/* for progress bar color  */
 .selectingcolor {
   color: rgb(255, 180, 0);
 }
