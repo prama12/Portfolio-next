@@ -9,7 +9,7 @@ const EducationExperience = () => {
         <div className=" text-center">
           <Header title="experience & education" />
         </div>
-        <div className="grid md:grid-cols-2 gap-2">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-2">
           <div className="w-full flex flex-col gap-8 ">
             {experience.map((data, index) => {
               return <EducationCard {...data} key={index} />;

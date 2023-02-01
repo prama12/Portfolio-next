@@ -25,12 +25,7 @@ const ProjectCard = ({ link, title, imagelink }) => {
         </div>
 
         <div className="w-full h-52 relative ">
-          <Image
-            src={imagelink}
-            alt="project_image"
-            layout="fill"
-            objectFit="cover"
-          />
+          <Image src={imagelink} alt="project_image" Fill objectFit="cover" />
         </div>
       </a>
     </div>
