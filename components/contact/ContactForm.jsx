@@ -43,7 +43,7 @@ const ContactForm = () => {
         (result) => {
           toast.success("Message sent successfully");
 
-          // custom toast to match the theme foe success
+          // custom toast  for success
 
           // toast.custom((e) => (
           //   <div
