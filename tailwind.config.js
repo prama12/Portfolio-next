@@ -27,9 +27,6 @@ module.exports = {
         "dark-background": "#111111",
         "primary-yellow": "#ffb400",
       },
-      // cursor: {
-      //   'fancy': 'url(/static/icons/cursor.png)',
-      // }
     },
   },
   plugins: [],
